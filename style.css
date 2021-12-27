@@ -58,9 +58,44 @@
     border-bottom: 1px solid black;
     padding-bottom: 30px;
 }
+
 #select{
     width: 400px;
 
+}
+#edu_block{
+    display: flex;
+    position: relative;
+    left: 30%;
+    justify-content: space-between;
+    width: 50%;
+    flex-direction: column;
+    
+}
+#edu_block_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#edu_block_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.dates{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    height: 35px;
+}
+
+.dates label{
+    display: block;
 }
 #Work{
     margin-top: 20px;
@@ -94,7 +129,7 @@
     margin-bottom: 10px;
     width: 30px;
 }
-#language{
+#lunguage{
     margin-top: 20px;
     border-bottom: 1px solid black;
     padding-bottom: 30px;
@@ -105,17 +140,11 @@
     display: flex;
     position: relative;
     overflow-inline: auto;
+    flex-wrap: wrap;
+
     
     /* bottom: 200px; */
     
-}
-#ranks{
-    border: 1px solid black;
-    position: relative;
-    /* left: 1115px; */
-    width: 250px;
-    
-    /* bottom: 50px; */
 }
 .lun-area{
     /* display: flex; */
@@ -126,11 +155,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 450px;
+    width: 470px;
     align-items: center;
 }
 #lunguage input{
     width: 400px;
+}
+#lun-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50px;
 }
 #lun-plus{
     cursor: pointer;
@@ -144,11 +179,19 @@
     border-bottom: 1px solid black;
     padding-bottom: 30px;
 }
+#spe-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50px;
+}
 .spec_area{
     width: auto;
     height: auto;
     display: flex;
     position: relative;
+    overflow-inline: auto;
+    flex-wrap: wrap;
     /* bottom: 200px; */
     
 }
@@ -161,7 +204,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 450px;
+    width: 470px;
     align-items: center;
 }
 #specs input{
@@ -174,41 +217,18 @@
     cursor: pointer;
 }
 /*  */
-#specialty{
-    margin-top: 20px;
-    /* width: 400px; */
-    padding-bottom: 30px;
-    border-bottom: 1px solid black;
-} 
-#specialty input{
-    width: 400px;
-}
-.spe{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 450px;
-}
-#spe-plus{
-    cursor: pointer;
-}
-#spe-close{
-    cursor: pointer;
-}
-.spe_mine{
-    width: auto;
-    height: auto;
-    display: flex;
-    position: relative;
-    
-}
 
 #Certificate{
     margin-top: 20px;
-    width: 400px;
+    border-bottom: 1px solid black;
     padding-bottom: 30px;
     
+}
+#Cer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50px;
 }
 #Certificate input{
     width: 400px;
@@ -218,7 +238,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 450px;
+    width: 470px;
 }
 #cer-plus{
     cursor: pointer;
@@ -226,20 +246,25 @@
 #cer-close{
     cursor: pointer;
 }
-.cer_mine{
-    width: 800px;
-    position: absolute;
-    bottom:0px;
-    height: 100px;
-    left: 550px;
-    
+.cer_area{
+    width: auto;
+    height: auto;
+    display: flex;
+    position: relative;
+    overflow-inline: auto;
+    flex-wrap: wrap;    
 }
-
-@media screen and (max-width:600px) {
+#Submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+@media screen and (max-width:767px) {
     #header{
         display: flex;
         flex-direction: column;
-        background-color: rgb(115, 166, 224);
+        background-color: orange;
         width: 100%;
         height: auto;
         margin: auto;
@@ -251,6 +276,9 @@
     #image{
         padding: auto;
         margin: auto;
+    }
+    #user{
+        font-size: 150px;
     }
     #Information{
         position: relative;
@@ -296,8 +324,75 @@
         display: flex;
         flex-direction: column;
     }
-    .lun-area{
+    .lun{
         display: flex;
         flex-direction: column;
+        width: auto;
+    }
+    #lunguage input{
+        width: auto;
+    }
+    #specs input{
+        width: auto;
+    }
+    #Certificate input{
+        width: auto;
+    }
+    .special{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .cer{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    #education{
+        display: flex;
+        flex-direction: column;
+    }
+    #edu_block{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        left: auto;
+    }
+    #edu_block_1{
+        display: flex;
+        flex-direction: column;
+    }
+    .dates{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    #header{
+        display: flex;
+        flex-direction: column;
+        background-color: oranges;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: auto;
+        justify-content: center;
+        justify-items: center;
+        
+    }
+    #image{
+        padding: auto;
+        margin: auto;
+    }
+    #Information{
+        position: relative;
+        width: auto;
+        margin: auto;
+        /* display: flex; */
+        padding: auto;
+        /* flex-direction: row; */
+        justify-content: center;
+        align-items: center;
+        right:auto;
     }
 }
